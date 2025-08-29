@@ -14,15 +14,11 @@
 
 <body>
 
-    <header>
-        <a href="dici.html" class="voltar">
-            <i class="fa fa-arrow-left"></i> Voltar
-        </a>
-        <div class="search-container">
-            <input type="text" id="busca" oninput="buscar()" placeholder="Pesquise uma palavra" />
-            <i class="fa fa-search"></i>
-        </div>
-    </header>
+   <header>
+    <a href="dici.html" class="voltar">
+      <i class="fa fa-arrow-left"></i> Voltar
+    </a>
+  </header>
 
     <main>
         <h2 id="titulo-categoria"></h2>
@@ -259,7 +255,7 @@
 
                 // criar título
                 const h2 = document.createElement("h2");
-                h2.textContent = `Letra ${video.nome}`;
+                h2.textContent = `${video.nome}`;
 
                 videoImagemLink = `${video.imagem.replace("https://drive.google.com/file/d/", "").replace("/view?usp=drive_link", "").replace("/view?usp=sharing","")}`
 
